@@ -4,7 +4,7 @@
             <li class="list-group-item active" aria-current="true">Detail Mahasiswa</li>
             <li class="list-group-item">Nama : <?= $data['nama'] ?></li>
             <li class="list-group-item">Email : <?= $data['email'] ?></li>
-            <li class="list-group-item">Ju rusan : <?= $data['jurusan'] ?></li>
+            <li class="list-group-item">Jurusan : <?= $data['jurusan'] ?></li>
         </ul>
         <a href="<?= BASEURL ?>/mahasiswa" class="btn btn-primary mt-2">Kembali</a>
     </div>

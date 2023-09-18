@@ -28,5 +28,6 @@ class Mahasiswa_model {
         $this->db->bind('username', $username);
 
         return $this->db->rowCount();
+
     }
 }

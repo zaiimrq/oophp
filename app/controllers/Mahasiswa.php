@@ -19,7 +19,12 @@ class Mahasiswa extends Controller {
     public function hapus($username)
     {
         if ($this->model('Mahasiswa_model')->hapus($username) > 0) {
-            
+
+            Flasher::setFlash('Berhasil', 'dihapus', 'success');
+            header('Location: ' . BASEURL . '/mahasiswa' );
+            exit;
+        } else {
+            Flasher::setFlash('Gagal', 'dihapus', 'danger');
             header('Location: ' . BASEURL . '/mahasiswa' );
             exit;
         }
